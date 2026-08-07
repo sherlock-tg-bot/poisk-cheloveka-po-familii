@@ -28,6 +28,10 @@
     .notice { border-color: #8d7950; margin-bottom: 30px; }
     footer { padding-top: 26px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
     @media (max-width: 680px) { .hero { padding-top: 46px; } .grid, .steps { grid-template-columns: 1fr; } main { padding-inline: 16px; } }
+
+    .topic-visual { margin:26px 0; }
+    .topic-visual img { display:block; width:100%; height:auto; aspect-ratio:16 / 9; object-fit:cover; border:1px solid #ffffff20; border-radius:12px; background:#0b1220; }
+    .topic-visual figcaption { margin-top:10px; color:inherit; opacity:.74; font-size:.92rem; line-height:1.5; }
   </style>
 </head>
 <body>
@@ -38,6 +42,11 @@
       <p class="lead">Одна фамилия редко позволяет надёжно установить личность. Добавьте имя и контекст, сопоставьте несколько открытых признаков и подтвердите результат по первоисточнику.</p>
       <a class="btn" href="https://go.sherlockbot.is/?utm_source=github&amp;utm_medium=repository&amp;utm_campaign=poisk-cheloveka-po-familii">Открыть в Telegram →</a>
     </section>
+
+    <figure class="topic-visual">
+      <img src="assets/poisk-cheloveka-po-familii-guide.webp" alt="Различение однофамильцев по открытым признакам и первоисточникам" width="1200" height="675" loading="eager" decoding="async">
+      <figcaption>Имя, город, профессия и публичные публикации помогают различать однофамильцев, но каждый признак нужно подтверждать.</figcaption>
+    </figure>
 
     <section class="grid" aria-label="Главные принципы">
       <article class="card"><strong>Уточняйте</strong><span class="muted">Имя, город, профессия и период активности сокращают число однофамильцев.</span></article>
