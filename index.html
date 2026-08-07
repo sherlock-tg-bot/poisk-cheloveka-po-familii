@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поиск человека по фамилии — безопасный алгоритм</title>
+  <meta name="description" content="Практический алгоритм поиска человека по фамилии: уточнение запроса, проверка совпадения по первоисточнику и законные границы работы с открытыми данными.">
+  <style>
+    :root { color-scheme: dark; --bg: #10151f; --panel: #182231; --line: #2b3a50; --text: #edf3fb; --muted: #aebbd0; --accent: #65d6a2; --accent-ink: #092117; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text); background: radial-gradient(circle at 85% 0, #203953 0, transparent 40rem), var(--bg); }
+    main { max-width: 980px; margin: auto; padding: 28px 20px 72px; }
+    nav { color: var(--muted); font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; }
+    .hero { padding: 72px 0 42px; max-width: 780px; }
+    h1 { max-width: 760px; margin: 0 0 20px; font-size: clamp(2.3rem, 7vw, 5.2rem); line-height: 1.02; letter-spacing: -.045em; }
+    h2 { margin: 0 0 14px; font-size: 1.45rem; }
+    p { margin: 0 0 16px; }
+    .lead { max-width: 680px; color: var(--muted); font-size: 1.15rem; }
+    .btn { display: inline-block; margin-top: 12px; padding: 12px 18px; border-radius: 10px; color: var(--accent-ink); background: var(--accent); font-weight: 750; text-decoration: none; }
+    .btn:hover { filter: brightness(1.08); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 28px 0 54px; }
+    .card, .notice { padding: 22px; border: 1px solid var(--line); border-radius: 16px; background: color-mix(in srgb, var(--panel) 88%, transparent); }
+    .card strong { display: block; margin-bottom: 7px; color: var(--accent); }
+    .steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 22px 0 54px; }
+    .step { display: flex; gap: 14px; }
+    .number { flex: 0 0 31px; height: 31px; border-radius: 50%; display: grid; place-items: center; color: var(--accent-ink); background: var(--accent); font-weight: 800; }
+    .muted { color: var(--muted); }
+    .notice { border-color: #8d7950; margin-bottom: 30px; }
+    footer { padding-top: 26px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    @media (max-width: 680px) { .hero { padding-top: 46px; } .grid, .steps { grid-template-columns: 1fr; } main { padding-inline: 16px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>Практическая памятка · открытые данные</nav>
+    <section class="hero">
+      <h1>Поиск человека по фамилии: как проверить совпадение</h1>
+      <p class="lead">Одна фамилия редко позволяет надёжно установить личность. Добавьте имя и контекст, сопоставьте несколько открытых признаков и подтвердите результат по первоисточнику.</p>
+      <a class="btn" href="https://go.sherlockbot.is/?utm_source=github&amp;utm_medium=repository&amp;utm_campaign=poisk-cheloveka-po-familii">Открыть в Telegram →</a>
+    </section>
+
+    <section class="grid" aria-label="Главные принципы">
+      <article class="card"><strong>Уточняйте</strong><span class="muted">Имя, город, профессия и период активности сокращают число однофамильцев.</span></article>
+      <article class="card"><strong>Проверяйте</strong><span class="muted">Сверяйте несколько признаков и дату с исходной публичной страницей.</span></article>
+      <article class="card"><strong>Ограничивайте</strong><span class="muted">Собирайте минимум необходимого и уважайте согласие и приватность.</span></article>
+    </section>
+
+    <section>
+      <h2>Алгоритм поиска</h2>
+      <div class="steps">
+        <div class="card step"><span class="number">1</span><div><strong>Сформулируйте запрос</strong><p class="muted">Соедините фамилию с именем, регионом или публичной организацией.</p></div></div>
+        <div class="card step"><span class="number">2</span><div><strong>Соберите совпадения</strong><p class="muted">Используйте открытые страницы как подсказки, а не как доказательство.</p></div></div>
+        <div class="card step"><span class="number">3</span><div><strong>Сверьте источник</strong><p class="muted">Проверьте дату, биографию и контекст на исходной странице.</p></div></div>
+        <div class="card step"><span class="number">4</span><div><strong>Остановитесь вовремя</strong><p class="muted">Не ищите закрытые контакты и не используйте данные для давления.</p></div></div>
+      </div>
+    </section>
+
+    <aside class="notice"><strong>Важно:</strong> совпадение фамилии не подтверждает личность. Инструмент помогает ориентироваться в открытых упоминаниях, но не заменяет согласие человека, официальную идентификацию или юридическую процедуру.</aside>
+    <footer>Подробнее о проверке и ограничениях — в <a class="muted" href="README.md">руководстве</a>. Для навигации по открытым упоминаниям <a class="muted" href="https://go.sherlockbot.is/?utm_source=github&amp;utm_medium=repository&amp;utm_campaign=poisk-cheloveka-po-familii">открыть в Telegram</a>.</footer>
+  </main>
+</body>
+</html>
