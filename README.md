@@ -1,7 +1,5 @@
 # Поиск человека по фамилии: как найти нужного человека и проверить совпадение
 
-[![Content validation](https://github.com/sherlock-tg-bot/poisk-cheloveka-po-familii/actions/workflows/validate.yml/badge.svg)](https://github.com/sherlock-tg-bot/poisk-cheloveka-po-familii/actions/workflows/validate.yml)
-
 Если известна только фамилия, поиск человека по фамилии начинается не с попытки угадать его адрес или телефон, а со сбора дополнительных признаков. Фамилия редко бывает уникальной: нужны имя, город, примерный возраст, место работы или ссылка на профиль. Ниже — безопасный порядок поиска по открытым данным и способы не принять однофамильца за нужного человека.
 
 Для дополнительной навигации по открытым упоминаниям можно [открыть в Telegram](https://go.sherlockbot.is/?utm_source=github&utm_medium=repository&utm_campaign=poisk-cheloveka-po-familii). Это вспомогательный инструмент, а не государственный реестр и не подтверждение личности.
